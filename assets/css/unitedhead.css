@@ -5,7 +5,7 @@ nav
 .icon
 {
 	float: right;
-	padding:2px 10px;
+	margin:2px 10px;
 	width: 40px;
 	height: 40px;
 }
@@ -13,7 +13,7 @@ nav
 {
 	display:none;
 	float: 	right;
-	padding: 12px;
+	width: 110px;
 }
 .search
 {

@@ -57,12 +57,11 @@ background-color: #FCC9B9		;
 	border-top-right-radius: 1em;
 }
 
-button{
-
+.modify
+{
 	float:left;
 	margin-left:10px;
 	margin-top: 10px;
-
 }
 
 .picture {

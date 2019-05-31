@@ -14,8 +14,6 @@ html,body
 .uisitor
 {
 	font-size:18px;
-	float: left;
-	padding: 12px;
 }
 nav 
 {
@@ -49,7 +47,6 @@ aside::before
   	content: "";
   	display: block;
   	width: 200px;
-  	height: 100%;
 }
 aside a 
 {
@@ -116,7 +113,26 @@ aside a
 footer
 {
 	width: 100%;
-	height: 100px;
 	margin: 50px 0px 0px 0px;
-	text-align: center;
+	background-color: #FFB3A7;
+	padding:2% 2% 0% 2%;
+    margin-top: 5%;
+}
+div.foot
+{
+    margin-left: 50px;
+    columns: 2; column-rule: #F0F8FF double 1px;
+}
+div.footnews
+{
+	margin-left: 35px;
+}
+div.footlogo
+{
+	margin-left: 90px;
+	-webkit-column-break-before: always;
+}
+.footlogoimg
+{
+	width:400px;
 }

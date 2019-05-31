@@ -1,0 +1,129 @@
+body{
+font-family: 微軟正黑體;
+}
+.picture{
+margin-top:25px;
+margin-left:5%;
+margin-bottom:5%;
+width:35%;
+border-radius:20px;
+}
+.Introduction{
+position: absolute; right: 18%;
+padding:20px;
+position: absolute;top :10%;
+background:#FFFAFA     ;
+width:500px;
+border-radius: 20px;
+}
+.name{
+font-size:24px;
+font-weight: bold;
+font-family: 微軟正黑體;
+}
+
+.button {
+padding: 10px 20px;
+font-size: 16px;
+text-align: center;
+cursor: pointer;
+outline: none;
+color:#000000   ;
+background-color: #B8A1CF	 ;
+border: none;
+border-radius: 15px;
+box-shadow: 0 6px #5000B8  ;
+font-family: 微軟正黑體;
+}
+.button:hover {background-color: #E6C3C3}
+.button:active {
+background-color:#8674A1    ;
+box-shadow: 0 3px #4B0080	 ;
+transform: translateY(4px);
+}
+section{
+border:#CCCCFF	   4px solid;
+width: 80%;
+margin-top: 30px;
+margin-left: 10%;
+margin-left: 10%;
+height:570px;
+}
+
+.tab {
+overflow: hidden;
+border: 1px solid #ccc;
+background-color: #f1f1f1;
+}
+.tab button {
+background-color: inherit;
+float: left;
+border: none;
+outline: none;
+cursor: pointer;
+padding: 14px 16px;
+transition: 0.3s;
+font-size: 17px;
+}
+.tab button:hover {
+background-color: #ddd;
+}
+.tab button.active {
+background-color: #ccc;
+}
+.tabcontent {
+display: none;
+padding: 6px 12px;
+border: 1px solid #ccc;
+border-top: none;
+width:950px;
+}
+
+.tabs{
+position: absolute;left:14%;
+background:#FFFAFA     ;
+}
+
+.comment{
+position:absolute;right:14%;top:40%;
+background-color:white;
+}
+
+.tab2{
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width:125px;
+}
+
+/* Style the buttons inside the tab */
+.tab2 button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 12px 12px;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+/* Change background color of buttons on hover */
+.tab2 button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab2 button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent2 {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  width:125px;
+  height:75px;
+}
