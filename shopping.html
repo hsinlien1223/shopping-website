@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>fall in love首頁</title>
+		<link rel=stylesheet type="text/css" href="assets/css/united.css">
+		<link rel=stylesheet type="text/css" href="assets/css/unitedhead.css">
+		<link rel=stylesheet type="text/css" href="assets/css/quantitybtn.css">
+		<link rel=stylesheet type="text/css" href="assets/css/shopping.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	</head>
+	<body style="background: url(assets/images/bg.png);background-size: 100% 100%;">
+		<script type="text/javascript" src="assets/js/menu.js"></script>
+		<nav>
+			<div class="toggle-wrap">
+				<span class="toggle-bar"></span>
+			</div>
+				<script type="text/javascript" src="assets/js/search.js"></script><!--搜尋按鈕-->
+			<div id="iconhide">
+				<input type="text" id="" class="search">
+			</div>
+			<img src="assets/images/search.png" alt="search" id="icon" class="icon">
+			
+			<a href="shopping.html"><!--購物車頁面-->
+				<img src="assets/images/shopping.png" alt="shopping" class="icon">
+			</a>
+
+			<a href="member.html"><!--會員頁面-->
+				<img src="assets/images/people.png" alt="people" class="icon">
+			</a>
+
+			<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="btnlogin">Login</button>
+			<div id="id01" class="modal">
+				<form class="modal-content animate" action="/action_page.php">
+					<div class="imgcontainer">
+						<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+						<img src="assets/images/login.png" alt="Avatar" class="avatar">
+					</div>
+					<div class="container">
+						<label for="uname" style="font-size: 20px"><b>Username</b></label>
+						<input type="text" placeholder="Enter Username" name="uname" required>
+						<label for="psw" style="font-size: 20px"><b>Password</b></label>
+						<input type="password" placeholder="Enter Password" name="psw" required>
+						
+						<button  type="submit">Login</button>
+						<label>
+							<input type="checkbox" checked="checked" name="remember"> Remember me
+						</label>
+					</div>
+					<div class="container" style="background-color:#a2d7dd">
+						<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+						<span class="psw">Forgot <a href="#">password?</a></span>
+					</div>
+				</form>
+			</div>
+			<script type="text/javascript" src="assets/js/membtn.js"></script>
+		</nav>
+		<aside>
+			<a href="index.html">首頁</a>
+			<a href="catedoll.html">娃娃</a>
+			<a href="cateapparel.html">配件</a>
+			<a href="catepillow.html">抱枕</a>
+			<a href="catediy.html">手工材料包</a>
+			<a href="cateother.html">加購專區</a>
+			<a href="group-member.html">關於我們</a>
+		</aside>
+		
+		<div class="unigrid">
+			<img src="assets/images/shopbear.jpg" class="shopimg shopbear">
+			<img src="assets/images/shoprabbit.jpg" class="shopimg shoprabbit">
+			<img src="assets/images/shopcat.jpg" class="shopimg shopcat">
+		</div>
+		<!--商品內容-->
+		<table>
+			<thead>
+				<tr>
+					<th>商品</th>
+					<th>單價</th>
+					<th>數量</th>
+					<th>刪除</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<!--商品名稱-->
+					</td>
+					<td>
+						<!--商品價格-->
+					</td>
+					<td>
+						<div class="numbtn">
+							<span class="input-number-decrement">-</span>
+						    <input id="input-number" type="text" value="1" min="1" max="10">
+						    <span class="input-number-increment">+</span></p><br>
+						   	<script type="text/javascript" src="assets/js/quantitybtn.js"></script>
+					   </div>
+					</td>
+					<td><!--刪除鍵-->
+						<a href=""><img src="assets/images/cross.png" class="cross"></a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<!--商品內容結束-->
+		<div class="unigrid">
+			<button type="button" class="uniship shipface">面交</button>
+			<button type="button" class="uniship shippost">郵寄</button>
+			<button type="button" class="uniship shipcvs">超商</button>
+			<button type="button" class="uniship shiphome">宅配</button>
+		</div>
+		<div class="unigrid">
+			<button type="submit" class="btnsub" onclick="javascript:location.href='confirm-order.html'">確認</button>
+			<button type="reset" class="btnre">清空</button>
+		</div>
+
+		<div class="ad">
+			
+		</div>
+		<footer>
+			2019.5	
+			<div class="uisitor"><!--訪客計數器-->
+				訪客累計：
+			</div>
+		</footer>
+	</body>
+</html>

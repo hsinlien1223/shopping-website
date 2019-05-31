@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="assets/css/registered.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<section>
+			<div class="registered" style="width:500px; margin:0px auto;" >
+				<form action="/action_page.php" >
+					<div class="container">
+						<h1>修改會員資料</h1>
+						<p>請確認填寫資料後，再按下完成鍵。</p>
+						<hr>
+						<label for="psw"><b>修改密碼</b></label>
+						<input type="password" placeholder="Enter Password" name="psw" required>
+						<label for="psw-repeat"><b>重新輸入修改後的密碼</b></label>
+						<input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+						<label for="name"><b>姓名</b></label>
+						<input type="text" placeholder="Enter name" name="name" value="" required>
+						<label for="email"><b>信箱</b></label>
+						<input type="text" placeholder="Enter Email" name="email" value="" required>
+						<label for="email"><b>手機</b></label>
+						<input type="text" placeholder="Enter number" name="number"  value="" required>
+						<label for="adress"><b>寄件地址</b></label>
+						<input type="text" placeholder="Enter Address" name="adress" value="" required>
+						
+						<hr>
+						
+						<button type="submit" class="registerbtn">修改完成</button>
+					</div>
+					
+					<div class="container signin">
+						<p> <a href="member.html">返回</a></p>
+					</div>
+				</form>
+			</div>
+		</section>
+	</body>
+</html>

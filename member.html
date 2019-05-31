@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel=stylesheet type="text/css" href="assets/css/united.css">
+		<link rel=stylesheet type="text/css" href="assets/css/unitedhead.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/member.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	</head>
+	<body>
+	<script type="text/javascript" src="assets/js/menu.js"></script>
+		<nav>
+			<div class="toggle-wrap">
+				<span class="toggle-bar"></span>
+			</div>
+				<script type="text/javascript" src="assets/js/search.js"></script><!--搜尋按鈕-->
+			<div id="iconhide">
+				<input type="text" id="" class="search">
+			</div>
+			<img src="assets/images/search.png" alt="search" id="icon" class="icon">
+			
+			<a href="shopping.html"><!--購物車頁面-->
+				<img src="assets/images/shopping.png" alt="shopping" class="icon">
+			</a>
+
+			<a href="member.html"><!--會員頁面-->
+				<img src="assets/images/people.png" alt="people" class="icon">
+			</a>
+			
+			<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="btnlogin">Login</button>
+			<div id="id01" class="modal">
+				<form class="modal-content animate" action="/action_page.php">
+					<div class="imgcontainer">
+						<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+						<img src="assets/images/login.png" alt="Avatar" class="avatar">
+					</div>
+					<div class="container">
+						<label for="uname" style="font-size: 20px"><b>Username</b></label>
+						<input type="text" placeholder="Enter Username" name="uname" required>
+						<label for="psw" style="font-size: 20px"><b>Password</b></label>
+						<input type="password" placeholder="Enter Password" name="psw" required>
+						
+						<button  type="submit">Login</button>
+						<label>
+							<input type="checkbox" checked="checked" name="remember"> Remember me
+						</label>
+					</div>
+					<div class="container" style="background-color:#a2d7dd">
+						<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+						<span class="psw">Forgot <a href="#">password?</a></span>
+					</div>
+				</form>
+			</div>
+			<script type="text/javascript" src="assets/js/membtn.js"></script>
+		</nav>
+		<aside>
+			<a href="index.html">首頁</a>
+			<a href="catedoll.html">娃娃</a>
+			<a href="cateapparel.html">配件</a>
+			<a href="catepillow.html">抱枕</a>
+			<a href="catediy.html">手工材料包</a>					
+			<a href="cateother.html">加購專區</a>
+			<a href="group-member.html">關於我們</a>
+		</aside>
+
+		<section>
+			<h1>會員專區</h1>
+			<div class="member">
+				<p><img src="assets/images/member.png"  title="點擊更換圖片" class="memberphoto" ></p>
+				<div class="data">
+					<table>
+						<tr>
+							<th class="table1">會員基本資料</th>
+							
+						</tr>
+						<tr>
+							<td>會員帳號：</td>
+							
+						</tr>
+						<tr>
+							<td>會員姓名：</td>
+							
+						</tr>
+						<tr>
+							<td>手機號碼：</td>
+							
+						</tr>
+						<tr>
+							<td class="table4">寄件地址：</td>
+							
+						</tr>
+					</table>
+					<button ><a href="modify.html">修改資料</a></button>
+				</div>
+			</div>
+
+			<div class="picture">
+			            <div ><img src="assets/images/record.png" class="record imgt"></div>
+
+						<div ><img src="assets/images/order.png" class="order imgt"></div>
+						
+						<div ><img src="assets/images/cart.png" class="cart imgt"></div>
+						
+						<div ><img src="assets/images/continu.png" class="continu imgt"></div>
+			</div>
+			
+			
+		</form>
+	</div>
+</section>
+</body>
+</html>
