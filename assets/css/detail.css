@@ -1,0 +1,90 @@
+.unigrid
+{
+	display: grid;
+  	grid-auto-columns:minmax(30px,30px);
+  	grid-gap:8px;
+  	margin: 20px;
+}
+.shopimg
+{
+	width: 200px;
+	border-radius: 999em;
+}
+.shopbear
+{
+	grid-column:10;
+}
+.shoprabbit
+{
+	grid-column:16;
+}
+.shopcat
+{
+	grid-column:22;
+}
+table
+{
+	border: 1px solid pink;
+	background: white;
+	margin-left:auto; 
+	margin-right:auto;
+}
+th
+{
+	border-bottom:2px pink double;
+}
+td,th
+{
+	padding: 10px;
+	width: 170px;
+}
+.numbtn
+{
+	margin: 12px;
+}
+.cross
+{
+	width:50px;
+	display:block; margin:auto;
+}
+.uniship
+{
+	width: 80px;
+	height: 80px;
+	text-align: center;
+	font-size: 20px;
+	border-radius: 10px;
+}
+.shipface
+{
+	grid-column:17;
+}
+.shippost
+{
+	grid-column:20;
+}
+.shipcvs
+{
+	grid-column:23;
+}
+.shiphome
+{
+	grid-column:26;
+}
+.btnsub
+{
+	width: 80px;
+	height: 40px;
+	grid-column:23;
+}
+.btnre
+{
+	width: 100px;
+	height: 40px;
+	grid-column:26;
+}
+.shipmem
+{
+	width: 300px;
+	grid-column:12;
+}

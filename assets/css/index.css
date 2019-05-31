@@ -1,0 +1,120 @@
+aside::before 
+{
+	height: 500px;
+}
+body
+{
+	background: url(../images/bg.png);
+	background-size: 100% 100%;
+}
+.top
+{
+	width: 799px;
+}
+.logoimg
+{
+	width:450px;
+	position: relative;
+	left: 450px;
+	top:-30px;
+}
+.slogan
+{
+	font-size: 24px;
+	font-family:  "Comic Sans MS";
+	color:black;
+	position: relative;
+	left: 550px;
+	top:-50px;
+}
+.container
+{
+	height: 500px;
+}
+.category
+{
+	display: grid; 
+  grid-auto-columns: minmax(40px,40px);
+  grid-auto-rows: minmax(40px,40px);
+  grid-column-gap:3px;
+  grid-row-gap:3px;
+}
+.cateimg:hover
+{
+	opacity: 0.8;
+}
+.txthide
+{
+	display: none;
+	width: 200px;
+}
+.doll
+{
+	width: 360px;
+	grid-column:3;
+	grid-row:4;
+}
+.doll:hover .txthide
+{
+	display:block;
+	font-size: 55px;
+	position: relative;	
+	top:-230px;
+	left: 120px;
+}
+.apparel
+{
+	width:270px;
+	grid-column:10;
+	grid-row:2;
+}
+.apparel:hover .txthide
+{
+	display:block;
+	position: relative;
+	left: 90px;
+	top:-160px;
+	font-size: 40px;
+}
+.pillow
+{
+	width:290px;
+	grid-column:14;
+	grid-row:6;
+}
+.pillow:hover .txthide
+{
+	display:block;
+	position: relative;
+	top:-170px;
+	left: 70px;
+	font-size: 40px;
+}
+.diy
+{
+	width:280px;
+	grid-column:19;
+	grid-row:3;
+}
+.diy:hover .txthide
+{
+	display:block;
+	position: relative;
+	top:-95px;
+	left: 60px;
+	font-size: 30px;
+}
+.other
+{
+	width:320px;
+	grid-column:24;
+	grid-row:6;
+}
+.other:hover .txthide
+{
+	display:block;
+	position: relative;
+	top:-180px;
+	left: 80px;
+	font-size: 50px;
+}
