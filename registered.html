@@ -1,20 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 	<head>
 		<meta charset="UTF-8">
-		<title>fall in love</title>
-		<link rel=stylesheet type="text/css" href="assets/css/united.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/united.css">
 		<link rel=stylesheet type="text/css" href="assets/css/unitedhead.css">
-		<link rel=stylesheet type="text/css" href="assets/css/category.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="assets/css/registered.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
-	<body style="background: url(assets/images/apparelbg.png);background-size: 50% 42%;">
-		<script type="text/javascript" src="assets/js/menu.js"></script>
-		<nav>
-			<div class="toggle-wrap">
-				<span class="toggle-bar"></span>
-			</div>
-				<script type="text/javascript" src="assets/js/search.js"></script><!--搜尋按鈕-->
+	<body>
+	<nav>
 			<div id="iconhide">
 				<input type="text" id="" class="search">
 			</div>
@@ -46,63 +40,54 @@
 							<input type="checkbox" checked="checked" name="remember"> Remember me
 						</label>
 					</div>
-					<div class="container" style="background-color:#a2d7dd">
+					<div class="container" style="background-color:#a2d7dd;">
 						<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
 						<span class="psw">Forgot <a href="#">password?</a></span>
 					</div>
 				</form>
 			</div>
-			<script type="text/javascript" src="assets/js/membtn.js"></script>
+
+		<script>
+		// Get the modal
+		var modal = document.getElementById('id01');
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+		if (event.target == modal) {
+		modal.style.display = "none";
+		}
+		}
+		</script>
 		</nav>
-		<aside>
-			<a href="index.html">首頁</a>
-			<a href="catedoll.html">娃娃</a>
-			<a href="cateapparel.html">配件</a>
-			<a href="catepillow.html">抱枕</a>
-			<a href="catediy.html">手工材料包</a>					
-			<a href="cateother.html">加購專區</a>
-			<a href="group-member.html">關於我們</a>
-		</aside>
-		
-		<div><!--商店名稱-->
-			<img src="assets/images/storename.png" class="storename">
-		</div>
-
-		<!--同類別商品-->
-		<div class="category">
-			<div class="commodity coma">
-				<img src="assets/images/girl.png" class="cateimg">
-				<h1>佯裝</h1>
-				<p>價格：NT$100</p>
-				<button  type="button">進入</button>
+		<section>
+			<div class="registered" style="width:500px; margin:0px auto;" >
+				<form action="/action_page.php" >
+					<div class="container">
+						<h1>註冊</h1>
+						<p>請填寫此表單以創建帳戶。</p>
+						<hr>
+						<label for="text"><b>姓名</b></label>
+						<input type="text" placeholder="Enter name" name="name" required>
+						<label for="email"><b>信箱</b></label>
+						<input type="text" placeholder="Enter Email" name="email" required>
+						<label for="number"><b>手機</b></label>
+						<input type="text" placeholder="Enter number" name="number"  required>
+						<label for="text"><b>帳號</b></label>
+						<input type="text" placeholder="Account Number" name="account " required>
+						<label for="psw"><b>密碼</b></label>
+						<input type="password" placeholder="Enter Password" name="psw" required>
+						<label for="psw-repeat"><b>重複輸入密碼</b></label>
+						<input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+						<hr>
+						<p>創建帳戶即表示您同意我們的 <a href="#">條款和隱私權</a>。</p>
+						<button type="submit" class="registerbtn">確認</button>
+					</div>
+					
+					<div class="container signin">
+						<p>已經擁有帳號？ <a href="#">登入</a>。</p>
+					</div>
+				</form>
 			</div>
-			
-			<div class="commodity comb">
-				<img src="assets/images/JPclothes.png" class="cateimg">
-				<h1>和服</h1>
-				<p>價格：NT$1000</p>
-				<button  type="button">進入</button>
-			</div>
-		</div>
-		<div class="category">
-			<div class="commodity coma">
-				<img src="assets/images/sailorsuit.png" class="cateimg">
-				<h1>水手服</h1>
-				<p>價格：NT$500</p>
-				<button  type="button">進入</button>
-			</div>
-
-			<div class="commodity comb">
-				<img src="assets/images/suit.png" class="cateimg">
-				<h1>上班族西裝</h1>
-				<p>價格：NT$800</p>
-				<button  type="button">進入</button>
-			</div>
-		</div>
-		
-		<div class="ad">
-			
-		</div>
+		</section>
 		<footer>
 			<div class="foot">
 				<div class="footnews">

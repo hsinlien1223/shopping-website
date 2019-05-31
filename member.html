@@ -2,14 +2,15 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
+		<title>fall in love</title>
 		<link rel=stylesheet type="text/css" href="assets/css/united.css">
 		<link rel=stylesheet type="text/css" href="assets/css/unitedhead.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/member.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	</head>
-	<body>
-	<script type="text/javascript" src="assets/js/menu.js"></script>
+	<body style="background: url(assets/images/dollbg.png);background-size: 50% 42%;">
+		<script type="text/javascript" src="assets/js/menu.js"></script>
 		<nav>
 			<div class="toggle-wrap">
 				<span class="toggle-bar"></span>
@@ -27,7 +28,7 @@
 			<a href="member.html"><!--會員頁面-->
 				<img src="assets/images/people.png" alt="people" class="icon">
 			</a>
-			
+			<button onclick="location.href='registered.html'" style="width:auto;float: right;margin:0px 10px; ">註冊</button>
 			<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="btnlogin">Login</button>
 			<div id="id01" class="modal">
 				<form class="modal-content animate" action="/action_page.php">
@@ -46,20 +47,30 @@
 							<input type="checkbox" checked="checked" name="remember"> Remember me
 						</label>
 					</div>
-					<div class="container" style="background-color:#a2d7dd">
+					<div class="container" style="background-color:#a2d7dd;">
 						<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
 						<span class="psw">Forgot <a href="#">password?</a></span>
 					</div>
 				</form>
 			</div>
-			<script type="text/javascript" src="assets/js/membtn.js"></script>
+
+		<script>
+		// Get the modal
+		var modal = document.getElementById('id01');
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+		if (event.target == modal) {
+		modal.style.display = "none";
+		}
+		}
+		</script>
 		</nav>
 		<aside>
 			<a href="index.html">首頁</a>
 			<a href="catedoll.html">娃娃</a>
 			<a href="cateapparel.html">配件</a>
 			<a href="catepillow.html">抱枕</a>
-			<a href="catediy.html">手工材料包</a>					
+			<a href="catediy.html">手工材料包</a>
 			<a href="cateother.html">加購專區</a>
 			<a href="group-member.html">關於我們</a>
 		</aside>
@@ -91,7 +102,7 @@
 							
 						</tr>
 					</table>
-					<button ><a href="modify.html">修改資料</a></button>
+					<button class="modify"><a href="modify.html">修改資料</a></button>
 				</div>
 			</div>
 
@@ -109,5 +120,25 @@
 		</form>
 	</div>
 </section>
+<footer>
+			<div class="foot">
+				<div class="footnews">
+					<div class="uisitor"><!--訪客計數器-->
+						訪客累計：
+					</div><br>
+					<h3>聯絡資訊</h3>
+					<p>電話：03-265-9999</p>
+					<p>Address:32023 桃園市中壢區中北路二OO號</p>
+					<p> <a href="mailto:dinapupss@gmail.com" id="button">
+							<img src="assets/images/mail.png" style="width:70px;" title="歡迎來信">
+								
+						</a>
+					</p>
+					©2019 CYCU
+				<div class="footlogo">
+					<img src="assets/images/storename.png" class="footlogoimg">
+				</div>
+			</div>
+		</footer>
 </body>
 </html>

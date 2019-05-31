@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel=stylesheet type="text/css" href="assets/css/united.css">
+		<link rel=stylesheet type="text/css" href="assets/css/unitedhead.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/clothback.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/quantitybtn.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	</head>
+	<body style="background: url(assets/images/apparelbg.png);background-size: 50% 42%;">
+	<script type="text/javascript" src="assets/js/menu.js"></script>
+		<nav>
+			<div class="toggle-wrap">
+				<span class="toggle-bar"></span>
+			</div>
+				<script type="text/javascript" src="assets/js/search.js"></script><!--搜尋按鈕-->
+			<div id="iconhide">
+				<input type="text" id="" class="search">
+			</div>
+			<img src="assets/images/search.png" alt="search" id="icon" class="icon">
+			
+			<a href="shopping.html"><!--購物車頁面-->
+				<img src="assets/images/shopping.png" alt="shopping" class="icon">
+			</a>
+
+			<a href="member.html"><!--會員頁面-->
+				<img src="assets/images/people.png" alt="people" class="icon">
+			</a>
+			<button onclick="location.href='registered.html'" style="width:auto;float: right;margin:0px 10px; ">註冊</button>
+			<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="btnlogin">Login</button>
+			<div id="id01" class="modal">
+				<form class="modal-content animate" action="/action_page.php">
+					<div class="imgcontainer">
+						<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+						<img src="assets/images/login.png" alt="Avatar" class="avatar">
+					</div>
+					<div class="container">
+						<label for="uname" style="font-size: 20px"><b>Username</b></label>
+						<input type="text" placeholder="Enter Username" name="uname" required>
+						<label for="psw" style="font-size: 20px"><b>Password</b></label>
+						<input type="password" placeholder="Enter Password" name="psw" required>
+						
+						<button  type="submit">Login</button>
+						<label>
+							<input type="checkbox" checked="checked" name="remember"> Remember me
+						</label>
+					</div>
+					<div class="container" style="background-color:#a2d7dd">
+						<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+						<span class="psw">Forgot <a href="#">password?</a></span>
+					</div>
+				</form>
+			</div>
+			<script type="text/javascript" src="assets/js/membtn.js"></script>
+		</nav>
+		<aside>
+			<a href="index.html">首頁</a>
+			<a href="catedoll.html">娃娃</a>
+			<a href="cateapparel.html">配件</a>
+			<a href="catepillow.html">抱枕</a>
+			<a href="catediy.html">手工材料包</a>					
+			<a href="cateother.html">加購專區</a>
+			<a href="group-member.html">關於我們</a>
+		</aside>
+		<section>
+						<div  >
+							<img class="picture" src="assets/images/girlhavebg.png" >
+						</div>
+				
+		
+			<div class="Introduction" >
+				<p class="name">洋裝<br></p>
+				<div  style="width:200px;"><p style="font-family: 微軟正黑體;">尺寸：
+					<select style="font-family: 微軟正黑體;">
+						<option value="0">請選擇</option>
+						<option value="1">S</option>
+						<option value="2">M</option>
+						<option value="3">L</option>
+					</select>
+				</div> </p>
+				<P style="font-family: 微軟正黑體;">介紹：</P>
+				<P style="font-family: 微軟正黑體;">庫存量：</P>
+				<p style="font-family: 微軟正黑體;">數量：
+					<span class="input-number-decrement">-</span>
+					<input id="input-number" type="text" value="1" min="1" max="10">
+					<span class="input-number-increment">+</span></p><br>
+					<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+					
+						<script type="text/javascript" src="assets/js/quantitybtn.js"></script>
+
+					<div class="comment">
+<div class="tab2">
+  <button class="tablinks" onclick="opentabs2(event, 'assess')"  id="defaultOpen" >評價</button>
+  <button class="tablinks" onclick="opentabs2(event, 'talk')"><a href="">留言板</a></button>
+  
+</div>
+
+<div id="assess" class="tabcontent2">
+ 
+  <p></p>
+</div>
+
+<script>
+function opentabs2(evt, Name) {
+  var i, tabcontent2, tablinks;
+  tabcontent2 = document.getElementsByClassName("tabcontent2");
+  for (i = 0; i < tabcontent2.length; i++) {
+    tabcontent2[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(Name).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen").click();
+</script>
+   </div>
+
+
+
+
+					
+					<button class="button">加入購物車</button>
+					<button class="button">立即購買</button>
+					
+				</div>
+				<div class="tabs">
+					<div class="tab">
+						<button class="tablinks" onclick="opentabs(event, 'introduce')" id="defaultOpen2" >商品介紹</button>
+						<button class="tablinks" onclick="opentabs(event, 'evaluation')">商品評價</button>
+					</div>
+					<div id="introduce" class="tabcontent">
+						商品介紹
+					</div>
+					<div id="evaluation" class="tabcontent">
+						過去評價
+					</div>
+					<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+					<script>
+					
+					function opentabs(evt, Name) {
+					var i, tabcontent, tablinks;
+					tabcontent = document.getElementsByClassName("tabcontent");
+					for (i = 0; i < tabcontent.length; i++) {
+					tabcontent[i].style.display = "none";
+					}
+					tablinks = document.getElementsByClassName("tablinks");
+					for (i = 0; i < tablinks.length; i++) {
+					tablinks[i].className = tablinks[i].className.replace(" active", "");
+					}
+					document.getElementById(Name).style.display = "block";
+					evt.currentTarget.className += " active";
+					}
+					document.getElementById("defaultOpen2").click();
+					</script>
+				</div>
+			</section>
+			
+			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<footer>
+			<div class="foot">
+				<div class="footnews">
+					<div class="uisitor"><!--訪客計數器-->
+						訪客累計：
+					</div><br>
+					<h3>聯絡資訊</h3>
+					<p>電話：03-265-9999</p>
+					<p>Address:32023 桃園市中壢區中北路二OO號</p>
+					<p> <a href="mailto:dinapupss@gmail.com" id="button">
+							<img src="assets/images/mail.png" style="width:70px;" title="歡迎來信">
+								
+						</a>
+					</p>
+					©2019 CYCU
+				<div class="footlogo">
+					<img src="assets/images/storename.png" class="footlogoimg">
+				</div>
+			</div>
+		</footer>	
+		</body>
+	</html>
