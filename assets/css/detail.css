@@ -1,9 +1,7 @@
-.unigrid
+body
 {
-	display: grid;
-  	grid-auto-columns:minmax(30px,30px);
-  	grid-gap:8px;
-  	margin: 20px;
+	background: url(../images/bg.png);
+	background-size: 50% 42%;
 }
 .shopimg
 {
@@ -76,15 +74,23 @@ td,th
 	width: 80px;
 	height: 40px;
 	grid-column:23;
-}
-.btnre
-{
-	width: 100px;
-	height: 40px;
-	grid-column:26;
+	grid-row:15;
 }
 .shipmem
 {
 	width: 300px;
 	grid-column:12;
+	grid-row:11;
+}
+.ordertable
+{
+	grid-column:8/30;
+	grid-row:7;
+}
+.ad
+{
+	grid-column:12;
+	grid-row:17/19;
+	width: 500px;
+	height: 100px; 
 }

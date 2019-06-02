@@ -1,0 +1,59 @@
+body
+{
+	background: url(../images/dollbg.png);
+	background-size: 100% 100%;
+}
+aside::before 
+{
+	height: 1000px;
+}
+.storename
+{
+	width: 400px;
+	position: relative;
+	left:475px;
+}
+.category
+{
+	margin: 0px auto;
+}
+.category div 
+{
+	display: inline-block;/*讓div並排*/
+	vertical-align: top;/*就算個個div行數不同，也一律向上對齊*/
+	width: 400px;
+	height: 450px;
+	margin: 10px;
+}
+.commodity
+{
+	width: 400px;
+	height: 450px;
+	background-color:white;
+	border: 3px;
+	border-radius: 5em;
+	text-align: center;
+}
+.coma
+{
+	position: relative;
+	left:200px;
+}
+.comb
+{
+	position: relative;
+	left:300px;
+}
+.ad
+{
+	margin: 20px auto;
+	width: 500px;
+	height: 100px;
+	border: 2px solid pink;  
+}
+.cateimg
+{
+	width: 300px;
+	display:block; 
+	margin:auto;
+}

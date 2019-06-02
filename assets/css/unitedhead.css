@@ -23,9 +23,11 @@ nav
 	width: 140px;
 	height: 25px;
 }
-.btnlogin
+.public_btn
 {
 	float: right;
+	border-radius: 15px;
+	margin: 0px 10px;
 }
 body {font-family: 微軟黑正體, Comic Sans MS;}
 /* Full-width input fields */

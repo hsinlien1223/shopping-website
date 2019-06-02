@@ -1,9 +1,7 @@
-.unigrid
+body
 {
-	display: grid;
-  	grid-auto-columns:minmax(30px,30px);
-  	grid-gap:8px;
-  	margin: 20px;
+	background: url(../images/bg.png);
+	background-size: 50% 42%;
 }
 .shopimg
 {
@@ -59,28 +57,39 @@ td,th
 .shipface
 {
 	grid-column:17;
+	grid-row:12;
 }
 .shippost
 {
 	grid-column:20;
+	grid-row:12;
 }
 .shipcvs
 {
 	grid-column:23;
+	grid-row:12;
 }
 .shiphome
 {
 	grid-column:26;
+	grid-row:12;
 }
 .btnsub
 {
 	width: 80px;
 	height: 40px;
 	grid-column:23;
+	grid-row:15;
 }
 .btnre
 {
 	width: 80px;
 	height: 40px;
 	grid-column:26;
+	grid-row:15;
+}
+.ordertable
+{
+	grid-column:8/30;
+	grid-row:7;
 }

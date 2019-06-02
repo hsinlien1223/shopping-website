@@ -1,14 +1,12 @@
+body
+{
+	background: url(../images/bg.png);
+	background-size: 50% 42%;
+}
 .icon
 {
 	width: 60px;
 	height: 44px;
-}
-.unigrid
-{
-	display: grid;
-  	grid-auto-columns:minmax(30px,30px);
-  	grid-gap:8px;
-  	margin: 20px;
 }
 .shopimg
 {
@@ -18,14 +16,17 @@
 .shopbear
 {
 	grid-column:10;
+	grid-row:1;
 }
 .shoprabbit
 {
 	grid-column:16;
+	grid-row:1;
 }
 .shopcat
 {
 	grid-column:22;
+	grid-row:1;
 	-webkit-filter:grayscale(1);
 }
 table
@@ -82,15 +83,30 @@ td,th
 	width: 80px;
 	height: 40px;
 	grid-column:23;
+	grid-row:15;
 }
 .btnre
 {
 	width: 100px;
 	height: 40px;
 	grid-column:26;
+	grid-row:15;
 }
 .shipmem
 {
 	width: 300px;
 	grid-column:12;
+	grid-row:11;
+}
+.ordertable
+{
+	grid-column:8/30;
+	grid-row:7;
+}
+.ad
+{
+	grid-column:12;
+	grid-row:17/19;
+	width: 500px;
+	height: 100px; 
 }

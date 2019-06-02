@@ -1,7 +1,3 @@
-aside::before 
-{
-	height: 500px;
-}
 body
 {
 	background: url(../images/bg.png);
@@ -14,18 +10,12 @@ body
 .logoimg
 {
 	width:450px;
-	position: relative;
-	left: 450px;
-	top:-30px;
 }
 .slogan
 {
 	font-size: 24px;
 	font-family:  "Comic Sans MS";
 	color:black;
-	position: relative;
-	left: 550px;
-	top:-50px;
 }
 .container
 {
@@ -52,7 +42,7 @@ body
 {
 	width: 360px;
 	grid-column:3;
-	grid-row:4;
+	grid-row:14/22;
 }
 .doll:hover .txthide
 {
@@ -66,7 +56,7 @@ body
 {
 	width:270px;
 	grid-column:10;
-	grid-row:2;
+	grid-row:12;
 }
 .apparel:hover .txthide
 {
@@ -80,7 +70,7 @@ body
 {
 	width:290px;
 	grid-column:14;
-	grid-row:6;
+	grid-row:16;
 }
 .pillow:hover .txthide
 {
@@ -94,7 +84,7 @@ body
 {
 	width:280px;
 	grid-column:19;
-	grid-row:3;
+	grid-row:13;
 }
 .diy:hover .txthide
 {
@@ -108,7 +98,7 @@ body
 {
 	width:320px;
 	grid-column:24;
-	grid-row:6;
+	grid-row:16;
 }
 .other:hover .txthide
 {
@@ -117,4 +107,8 @@ body
 	top:-180px;
 	left: 80px;
 	font-size: 50px;
+}
+footer
+{
+	width: 96%;
 }

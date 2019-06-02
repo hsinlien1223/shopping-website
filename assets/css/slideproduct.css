@@ -1,31 +1,65 @@
-body{
-background-size: 50% 42%;
-}
-p
-{
-  margin: 10px;
-}
-.picture{
+body
+  {
+    background: url(../images/dollbg.png);
+    background-size: 50% 42%;
+  }
+article{
+  grid-column:1/30;
+  grid-row:1;
 margin-top:25px;
 margin-left:5%;
-margin-bottom:5%;
-width:350px;
-border-radius:20px;
+width: 35%;
 }
 .Introduction{
 grid-column:13;
+  grid-row:1;
 margin-top:65px;
 padding:20px;
 background:#FFFAFA     ;
 width:500px;
-height: 320px;
+height: 340px;
 border-radius: 20px;
 }
 .name{
 font-size:24px;
 font-weight: bold;
 }
-
+*{box-sizing: border-box;}
+.input-number{
+width:50px;
+padding: 0 12px;
+vertical-align: top;
+text-align: center;
+outline: none;
+}
+.input-number,.input-number-decrement,.input-number-increment{
+border: 1px solid #cccccc;
+height: 30px;
+user-select:none;
+}
+.input-number-decrement,.input-number-increment{
+display:inline-block;
+width: 30px;
+line-height: 30px;
+background: #f1f1f1;
+color: #444444;
+text-align: center;
+font-weight: bold;
+cursor: pointer;
+}
+.input-number-decrement:active,
+.input-number-increment:active{
+background: #dddddd;
+}
+.input-number-decrement
+{
+border-right: none;
+border-radius: 0px 0 0 0px;
+}
+.input-number-increment{
+border-left: none;
+border-radius: 0 0px 0px 0;
+}
 .button {
 padding: 10px 20px;
 font-size: 16px;
@@ -33,26 +67,26 @@ text-align: center;
 cursor: pointer;
 outline: none;
 color:#000000   ;
+background-color: #FDF5E6 ;
 border: none;
 border-radius: 15px;
+box-shadow: 0 6px #DCDCDC   ;
 }
+.button:hover {background-color: #E6C3C3}
 .button:active {
-background-color:#FA9258    ;
-box-shadow: 0 3px #6A432D	 ;
+background-color:#C0C0C0    ;
+box-shadow: 0 3px #A9A9A9 ;
 transform: translateY(4px);
 }
 section{
-border:4px solid;
+border:#FFFAFA   4px solid;
 width: 80%;
 margin-top: 30px;
 margin-left: 10%;
 margin-left: 10%;
 height:570px;
 }
-.tablinks
-{
-  border-radius: 0px;
-}
+
 .tab {
 overflow: hidden;
 border: 1px solid #ccc;
@@ -75,21 +109,24 @@ background-color: #ddd;
 background-color: #ccc;
 }
 .tabcontent {
-    background-color: white;
 display: none;
 padding: 6px 12px;
 border: 1px solid #ccc;
 border-top: none;
+ background-color: white;
 }
-
 .tabs{
-  grid-column:2/27;
-grid-row:12;
+  margin: 10px;
+  grid-column:2/26;
+  grid-row:12;
 background:#FFFAFA;
 }
-
+.tablinks
+{
+  border-radius: 0px;
+}
 .comment{
-float: right;
+  float: right;
 margin:-70px 20px 40px 0px;
 background-color:white;
 }
@@ -125,7 +162,6 @@ background-color:white;
 
 /* Style the tab content */
 .tabcontent2 {
-
   display: none;
   padding: 6px 12px;
   border: 1px solid #ccc;
