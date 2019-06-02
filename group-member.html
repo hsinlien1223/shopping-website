@@ -9,7 +9,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
-<body style="background: url(assets/images/bg.png);background-size: 50% 42%;">
+<body>
 		<script type="text/javascript" src="assets/js/menu.js"></script>
 		<nav>
 			<div class="toggle-wrap">
@@ -28,8 +28,8 @@
 			<a href="member.html"><!--會員頁面-->
 				<img src="assets/images/people.png" alt="people" class="icon">
 			</a>
-			<button onclick="location.href='registered.html'" style="width:auto;float: right;margin:0px 10px; ">註冊</button>
-			<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="btnlogin">Login</button>
+			<button onclick="location.href='registered.html'" class="public_btn">註冊</button>
+			<button onclick="document.getElementById('id01').style.display='block'" class="public_btn">Login</button>
 			<div id="id01" class="modal">
 				<form class="modal-content animate" action="/action_page.php">
 					<div class="imgcontainer">
@@ -66,45 +66,42 @@
 		</aside>
 
 		<!--成員介紹-->
-		<div class="member">
-			<div class="memberuni memberimg">
-				<img alt="" src="" class="mempad">
-			</div>
-			<div class="memberuni memberword">
-				<p class="mempad">
-					wwwwwwww
-				</p>
-			</div>
-		</div>
-		<div class="member">
-			<div class="memberuni memberword">
-				<p class="mempad">
-					wwwwwwww
-				</p>
-			</div>
-			<div class="memberuni memberimg">
-				<img alt="" src="" class="mempad">
-			</div>
-		</div>
-		<div class="member">
-			<div class="memberuni memberimg">
-				<img alt="" src="" class="mempad">
-			</div>
-			<div class="memberuni memberword">
-				<p class="mempad">
-					wwwwwwww
-				</p>
-			</div>
-		</div>
-		<div class="member">
-			<div class="memberuni memberword">
-				<p class="mempad">
-					wwwwwwww
-				</p>
-			</div>
-			<div class="memberuni memberimg">
-				<img alt="" src="" class="mempad">
-			</div>
+		<div class="unigrid">
+				<div class="memberuni memberimg" style="grid-column:4;grid-row:1/7;'">
+					<img alt="" src="" class="mempad">
+				</div>
+				<div class="memberuni memberword" style="grid-column:14;grid-row:1/7;">
+					<p class="mempad">
+						wwwwwwww
+					</p>
+				</div>
+
+				<div class="memberuni memberword" style="grid-column:4;grid-row:8/14;'">
+					<p class="mempad">
+						wwwwwwww
+					</p>
+				</div>
+				<div class="memberuni memberimg" style="grid-column:24;grid-row:8/14;'">
+					<img alt="" src="" class="mempad">
+				</div>
+
+				<div class="memberuni memberimg" style="grid-column:4;grid-row:15/21;'">
+					<img alt="" src="" class="mempad">
+				</div>
+				<div class="memberuni memberword" style="grid-column:14;grid-row:15/21;'">
+					<p class="mempad">
+						wwwwwwww
+					</p>
+				</div>
+
+				<div class="memberuni memberword" style="grid-column:4;grid-row:22/28;'">
+					<p class="mempad">
+						wwwwwwww
+					</p>
+				</div>
+				<div class="memberuni memberimg" style="grid-column:24;grid-row:22/28;'">
+					<img alt="" src="" class="mempad">
+				</div>
 		</div>
 		
 		<footer>
@@ -117,8 +114,7 @@
 					<p>電話：03-265-9999</p>
 					<p>Address:32023 桃園市中壢區中北路二OO號</p>
 					<p> <a href="mailto:dinapupss@gmail.com" id="button">
-							<img src="assets/images/mail.png" style="width:70px;" title="歡迎來信">
-								
+							<img src="assets/images/mail.png" style="width:70px;" title="歡迎來信">	
 						</a>
 					</p>
 					©2019 CYCU
@@ -127,5 +123,5 @@
 				</div>
 			</div>
 		</footer>
-</body>
+	</body>
 </html>

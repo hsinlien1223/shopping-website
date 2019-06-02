@@ -9,7 +9,7 @@
 		<link rel=stylesheet type="text/css" href="assets/css/confirm-order.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	</head>
-	<body style="background: url(assets/images/bg.png);background-size: 50% 42%;">
+	<body>
 		<script type="text/javascript" src="assets/js/menu.js"></script>
 		<nav>
 			<div class="toggle-wrap">
@@ -28,8 +28,8 @@
 			<a href="member.html"><!--會員頁面-->
 				<img src="assets/images/people.png" alt="people" class="icon">
 			</a>
-			<button onclick="location.href='registered.html'" style="width:auto;float: right;margin:0px 10px; ">註冊</button>
-			<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="btnlogin">Login</button>
+			<button onclick="location.href='registered.html'" class="public_btn">註冊</button>
+			<button onclick="document.getElementById('id01').style.display='block'" class="public_btn">Login</button>
 			<div id="id01" class="modal">
 				<form class="modal-content animate" action="/action_page.php">
 					<div class="imgcontainer">
@@ -69,35 +69,36 @@
 			<img src="assets/images/shopbear.jpg" class="shopimg shopbear">
 			<img src="assets/images/shoprabbit.jpg" class="shopimg shoprabbit">
 			<img src="assets/images/shopcat.jpg" class="shopimg shopcat">
-		</div>
-		<!--確認定單-->
-		<table>
-			<thead>
-				<tr>
-					<th>商品</th>
-					<th>單價</th>
-					<th>數量</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>
-						<!--商品名稱-->
-					</td>
-					<td>
-						<!--商品價格-->
-					</td>
-					<td>
-						<!--商品數量-->
-					</td>
-				</tr>
-				<tr>
-					<td>總額：</td>
-				</tr>
-			</tbody>
-		</table>
 
-		<div class="unigrid">
+			<!--確認定單-->
+			<div class="ordertable">
+				<table>
+					<thead>
+						<tr>
+							<th>商品</th>
+							<th>單價</th>
+							<th>數量</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<!--商品名稱-->
+							</td>
+							<td>
+								<!--商品價格-->
+							</td>
+							<td>
+								<!--商品數量-->
+							</td>
+						</tr>
+						<tr>
+							<td>總額：</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>	
+
 			<table class="shipmem">
 				<tr>
 					<td>會員：</td>
@@ -109,16 +110,17 @@
 					<td>寄送方式：</td>
 				</tr>
 			</table>
-		</div>
+
 		<!--確認定單結束-->
-		<div class="unigrid">
+
 			<button type="submit" class="btnsub" onclick="javascript:location.href='detail.html'">確認</button>
 			<button type="button" class="btnre" onclick="javascript:location.href='shopping.html'">回上頁</button>
+
+			<div class="ad">
+				<img src="assets/images/ad2.png" class="ad">
+			</div>
 		</div>
 
-		<div class="ad">
-			
-		</div>
 		<footer>
 			<div class="foot">
 				<div class="footnews">
@@ -129,8 +131,7 @@
 					<p>電話：03-265-9999</p>
 					<p>Address:32023 桃園市中壢區中北路二OO號</p>
 					<p> <a href="mailto:dinapupss@gmail.com" id="button">
-							<img src="assets/images/mail.png" style="width:70px;" title="歡迎來信">
-								
+							<img src="assets/images/mail.png" style="width:70px;" title="歡迎來信">	
 						</a>
 					</p>
 					©2019 CYCU

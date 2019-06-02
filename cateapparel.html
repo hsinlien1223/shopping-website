@@ -27,8 +27,8 @@
 			<a href="member.html"><!--會員頁面-->
 				<img src="assets/images/people.png" alt="people" class="icon">
 			</a>
-			<button onclick="location.href='registered.html'" style="width:auto;float: right;margin:0px 10px; ">註冊</button>
-			<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="btnlogin">Login</button>
+			<button onclick="location.href='registered.html'" class="public_btn">註冊</button>
+			<button onclick="document.getElementById('id01').style.display='block'" class="public_btn" class="public_btn">Login</button>
 			<div id="id01" class="modal">
 				<form class="modal-content animate" action="/action_page.php">
 					<div class="imgcontainer">
@@ -69,39 +69,38 @@
 		</div>
 
 		<!--同類別商品-->
-		<div class="category">
+		<div class="unigrid">
 			<div class="commodity coma">
 				<img src="assets/images/girl.png" class="cateimg">
-				<h1>佯裝</h1>
-				<p>價格：NT$100</p>
-				<button  type="button">進入</button>
+				<h1>洋裝</h1>
+				<p>價格：NT$210起</p>
+				<button  type="button" onclick="javascript:location.href='girlcloth.html'">進入</button>
 			</div>
 			
 			<div class="commodity comb">
 				<img src="assets/images/JPclothes.png" class="cateimg">
 				<h1>和服</h1>
-				<p>價格：NT$1000</p>
-				<button  type="button">進入</button>
-			</div>
-		</div>
-		<div class="category">
-			<div class="commodity coma">
-				<img src="assets/images/sailorsuit.png" class="cateimg">
-				<h1>水手服</h1>
-				<p>價格：NT$500</p>
-				<button  type="button">進入</button>
+				<p>價格：NT$240起</p>
+				<button type="button" onclick="javascript:location.href='jpcloth.html'">進入</button>
 			</div>
 
-			<div class="commodity comb">
+			<div class="commodity comc">
+				<img src="assets/images/sailorsuit.png" class="cateimg">
+				<h1>水手服</h1>
+				<p>價格：NT$220起</p>
+				<button  type="button" onclick="javascript:location.href='sailorcloth.html'">進入</button>
+			</div>
+
+			<div class="commodity comd">
 				<img src="assets/images/suit.png" class="cateimg">
 				<h1>上班族西裝</h1>
-				<p>價格：NT$800</p>
-				<button  type="button">進入</button>
+				<p>價格：NT$220起</p>
+				<button  type="button" onclick="javascript:location.href='suitcloth.html'">進入</button>
 			</div>
-		</div>
 		
-		<div class="ad">
-			
+			<div class="ad">
+				<img src="assets/images/ad1.png" class="ad">
+			</div>
 		</div>
 		<footer>
 			<div class="foot">
@@ -113,8 +112,7 @@
 					<p>電話：03-265-9999</p>
 					<p>Address:32023 桃園市中壢區中北路二OO號</p>
 					<p> <a href="mailto:dinapupss@gmail.com" id="button">
-							<img src="assets/images/mail.png" style="width:70px;" title="歡迎來信">
-								
+							<img src="assets/images/mail.png" style="width:70px;" title="歡迎來信">	
 						</a>
 					</p>
 					©2019 CYCU
