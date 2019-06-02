@@ -1,0 +1,98 @@
+body {
+font-family:微軟黑正體;
+background-image:url(../images/bg.png);
+background-size:100% 100%;
+}
+* {
+box-sizing: border-box;
+}
+h1{
+font-family:"Microsoft JhengHei";
+margin-left:50px;
+}
+img.memberphoto{
+float: left;
+width: 300px;
+height: 300px;
+border-radius:999em;
+margin-left:50px;
+margin-right:70px;
+
+}
+section{
+background-color: white;
+border: #FCC9B9 1px solid;
+width: 80%;
+margin-top: 30px;
+margin-left: 10%;
+height:850px;
+}
+
+table {
+border-collapse: separate;
+border-spacing: 0;
+width: 50%;
+border: 1px solid #F08F90;
+border-top-left-radius:1em;
+border-top-right-radius:1em;
+border-bottom-right-radius:1em;
+border-bottom-left-radius:1em;
+}
+th, td {
+text-align: left;
+font-family:"Microsoft JhengHei";
+padding: 16px;
+}
+tr:nth-child(odd) {
+background-color: #FCC9B9		;
+}
+
+.table4{
+	border-bottom-left-radius: 1em;
+	border-bottom-right-radius: 1em;
+}
+.table1{
+
+	border-top-left-radius: 1em;
+	border-top-right-radius: 1em;
+}
+
+.modify
+{
+	float:left;
+	margin-left:10px;
+	margin-top: 10px;
+}
+
+.picture {
+margin: 0px auto;/*div對齊效果*//*display: inline對齊效果*/
+}
+.picture div {
+display: inline-block;/*讓div並排*/
+vertical-align: top;/*就算個個div行數不同，也一律向上對齊*/
+
+
+}
+
+.imgt:hover{
+	
+    -webkit-filter: drop-shadow(8px 8px 10px #000); /* Safari */
+    filter: drop-shadow(8px 8px 10px #000);
+} 
+img.record{
+	position:absolute;left:13%;top:70%;
+
+	width:300px;
+}
+img.order{
+	position:absolute;left:32%;bottom:-38%;
+	width:275px;
+}
+img.cart{
+	position:absolute;right:32%;bottom:-12%;
+	width:250px;
+}
+img.continu{
+	position:absolute;right:13%;bottom:-38%;
+	width:300px;
+}
