@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 	<head>
 		<meta charset="UTF-8">
 		<title>fall in love</title>
 		<link rel=stylesheet type="text/css" href="assets/css/united.css">
 		<link rel=stylesheet type="text/css" href="assets/css/unitedhead.css">
-		<link rel=stylesheet type="text/css" href="assets/css/quantitybtn.css">
-		<link rel=stylesheet type="text/css" href="assets/css/shopping.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/backmember.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	</head>
-	<body>
+	<body style="background: url(assets/images/bg.png);background-size: 50% 42%;">
 		<script type="text/javascript" src="assets/js/menu.js"></script>
 		<nav>
 			<div class="toggle-wrap">
@@ -30,7 +29,7 @@
 				<img src="assets/images/people.png" alt="people" class="icon">
 			</a>
 			<button onclick="location.href='registered.html'" class="public_btn">註冊</button>
-			<button onclick="document.getElementById('id01').style.display='block'"  class="public_btn">Login</button>
+			<button onclick="document.getElementById('id01').style.display='block'" class="public_btn">Login</button>
 			<div id="id01" class="modal">
 				<form class="modal-content animate" action="/action_page.php">
 					<div class="imgcontainer">
@@ -54,7 +53,12 @@
 					</div>
 				</form>
 			</div>
-			<script type="text/javascript" src="assets/js/membtn.js"></script>
+
+
+
+		<script type="text/javascript" src="assets/js/membtn.js"></script>
+
+
 		</nav>
 		<aside>
 			<a href="index.html">首頁</a>
@@ -65,62 +69,28 @@
 			<a href="cateother.html">加購專區</a>
 			<a href="group-member.html">關於我們</a>
 		</aside>
+
+		<section>
 		
-		<div class="unigrid">
-			<img src="assets/images/shopbear.jpg" class="shopimg shopbear">
-			<img src="assets/images/shoprabbit.jpg" class="shopimg shoprabbit">
-			<img src="assets/images/shopcat.jpg" class="shopimg shopcat">
-			<!--商品內容-->
-			<div class="ordertable">
-				<table>
-					<thead>
-						<tr>
-							<th>商品</th>
-							<th>單價</th>
-							<th>數量</th>
-							<th>刪除</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>
-								<!--商品名稱-->
-							</td>
-							<td>
-								<!--商品價格-->
-							</td>
-							<td>
-								<div class="numbtn">
-									<span class="input-number-decrement">-</span>
-								    <input id="input-number" type="text" value="1" min="1" max="10">
-								    <span class="input-number-increment">+</span></p><br>
-								   	<script type="text/javascript" src="assets/js/quantitybtn.js"></script>
-							   </div>
-							</td>
-							<td><!--刪除鍵-->
-								<a href=""><img src="assets/images/cross.png" class="cross"></a>
-							</td>
-						</tr>
-					</tbody>
-				</table>
+			<h1>後台專區</h1>
+			
+					
+
+			<div class="update">
+			           <div style="grid-column:3;grid-row:3;"><a href="updatedoll.html" ><img src="assets/images/updatedoll.png" class="updatedoll"></div></a>
+
+						<div style="grid-column:15;grid-row:11;"><a href="updatepillow.html" ><img src="assets/images/updatepillow.png" class="updatepillow"></div></a>
+						
+						<div style="grid-column:26;grid-row:4;"><a href="updatecloth.html" ><img src="assets/images/updatecloth.png" class="updatecloth"></div></a>
+						
+						<div style="grid-column:3;grid-row:16;"><a href="updatediy.html" ><img src="assets/images/updatediy.png" class="updatediy"></div></a>
+						<div style="grid-column:39;grid-row:12;"><a href="updateother.html" ><img src="assets/images/updateother.png" class="updateother"></div></a>
 			</div>
-
-			<!--商品內容結束-->
-
-			<button type="button" class="uniship shipface">面交</button>
-			<button type="button" class="uniship shippost">郵寄</button>
-			<button type="button" class="uniship shipcvs">超商</button>
-			<button type="button" class="uniship shiphome">宅配</button>
-
-			<button type="submit" class="btnsub" onclick="javascript:location.href='confirm-order.html'">確認</button>
-			<button type="reset" class="btnre">清空</button>
-
-			<div class="ad">
-				<img src="assets/images/ad4.png" class="ad">
-			</div>
-		</div>
-
-		<footer>
+			
+		
+	
+</section>
+<footer>
 			<div class="foot">
 				<div class="footnews">
 					<div class="uisitor"><!--訪客計數器-->
@@ -130,7 +100,8 @@
 					<p>電話：03-265-9999</p>
 					<p>Address:32023 桃園市中壢區中北路二OO號</p>
 					<p> <a href="mailto:dinapupss@gmail.com" id="button">
-							<img src="assets/images/mail.png" style="width:70px;" title="歡迎來信">	
+							<img src="assets/images/mail.png" style="width:70px;" title="歡迎來信">
+								
 						</a>
 					</p>
 					©2019 CYCU
@@ -139,5 +110,5 @@
 				</div>
 			</div>
 		</footer>
-	</body>
+</body>
 </html>
