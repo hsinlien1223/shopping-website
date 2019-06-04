@@ -1,18 +1,18 @@
 body
-  {
-    background: url(../images/dollbg.png);
-    background-size: 50% 42%;
-  }
+{
+background: url(../images/dollbg.png);
+background-size: 50% 42%;
+}
 article{
-  grid-column:1/30;
-  grid-row:1;
+grid-column:1/30;
+grid-row:1;
 margin-top:25px;
 margin-left:5%;
 width: 35%;
 }
 .Introduction{
 grid-column:13;
-  grid-row:1;
+grid-row:1;
 margin-top:65px;
 padding:20px;
 background:#FFFAFA     ;
@@ -71,6 +71,7 @@ background-color: #FDF5E6 ;
 border: none;
 border-radius: 15px;
 box-shadow: 0 6px #DCDCDC   ;
+position: relative;top:-25px;
 }
 .button:hover {background-color: #E6C3C3}
 .button:active {
@@ -84,9 +85,8 @@ width: 80%;
 margin-top: 30px;
 margin-left: 10%;
 margin-left: 10%;
-height:570px;
+height:1500px;
 }
-
 .tab {
 overflow: hidden;
 border: 1px solid #ccc;
@@ -113,95 +113,168 @@ display: none;
 padding: 6px 12px;
 border: 1px solid #ccc;
 border-top: none;
- background-color: white;
+background-color: white;
 }
 .tabs{
-  margin: 10px;
-  grid-column:2/26;
-  grid-row:12;
+margin: 10px;
+grid-column:2/26;
+grid-row:12;
 background:#FFFAFA;
 }
 .tablinks
 {
-  border-radius: 0px;
+border-radius: 0px;
 }
 .comment{
-  float: right;
+float: right;
 margin:-70px 20px 40px 0px;
 background-color:white;
+position: relative;top:-25px;
+height:98px;
 }
-
 .tab2{
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-  width:125px;
+overflow: hidden;
+border: 1px solid #ccc;
+background-color: #f1f1f1;
+width:125px;
+position: relative;top:-25px;
 }
-
 /* Style the buttons inside the tab */
 .tab2 button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 12px 12px;
-  transition: 0.3s;
-  font-size: 14px;
+background-color: inherit;
+float: left;
+border: none;
+outline: none;
+cursor: pointer;
+padding: 12px 12px;
+transition: 0.3s;
+font-size: 14px;
 }
-
 /* Change background color of buttons on hover */
 .tab2 button:hover {
-  background-color: #ddd;
+background-color: #ddd;
 }
-
 /* Create an active/current tablink class */
 .tab2 button.active {
-  background-color: #ccc;
+background-color: #ccc;
 }
-
 /* Style the tab content */
 .tabcontent2 {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
-  width:125px;
-  height:75px;
+display: none;
+padding: 6px 12px;
+border: 1px solid #ccc;
+border-top: none;
+width:125px;
+height:75px;
+position: relative;top:-25px;
 }
 .shoppingmodal
 {
-  display: none;
-  position: fixed;
-  z-index: 1; 
-  padding-top: 100px; 
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.4); 
+display: none;
+position: fixed;
+z-index: 1;
+padding-top: 100px;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+overflow: auto;
+background-color: rgb(0,0,0);
+background-color: rgba(0,0,0,0.4);
 }
-.shoppingmodal-content 
+.shoppingmodal-content
 {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 40%;
+background-color: #fefefe;
+margin: auto;
+padding: 20px;
+border: 1px solid #888;
+width: 40%;
 }
 .shoppingclose
 {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+color: #aaaaaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
 }
-
-.shoppingclose:hover,.shoppingclose:focus 
+.shoppingclose:hover,.shoppingclose:focus
 {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}
+input[type=text],  textarea {
+width: 100%;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+margin-top: 6px;
+margin-bottom: 16px;
+resize: vertical;
+}
+.send[type=submit] {
+background-color:#F08F90;
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+.send[type=submit]:hover {
+background-color: #FCC9B9;
+}
+.container {
+border-radius: 20px;
+background-color: #FDF5E6;
+padding: 20px;
+}
+legend{font-size:16px;}
+.rating {
+float:left;
+}
+/* :not(:checked) is a filter, so that browsers that don’t support :checked don’t
+follow these rules. Every browser that supports :checked also supports :not(), so
+it doesn’t make the test unnecessarily selective */
+.rating:not(:checked) > input {
+position:absolute;
+top:-9999px;
+clip:rect(0,0,0,0);
+}
+.rating:not(:checked) > label {
+float:right;
+width:1em;
+padding:0 .1em;
+overflow:hidden;
+white-space:nowrap;
+cursor:pointer;
+font-size:200%;
+line-height:1.2;
+color:#ddd;
+text-shadow:1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0,0,0,.5);
+}
+.rating:not(:checked) > label:before {
+content: '★ ';
+}
+.rating > input:checked ~ label {
+color: #f70;
+text-shadow:1px 1px #c60, 2px 2px #940, .1em .1em .2em rgba(0,0,0,.5);
+}
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+color: gold;
+text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+color: #ea0;
+text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+.rating > label:active {
+position:relative;
+top:2px;
+left:2px;
 }

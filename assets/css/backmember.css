@@ -1,0 +1,35 @@
+section{
+background-color: white;
+border: #FCC9B9 1px solid;
+width: 80%;
+margin-top: 30px;
+margin-left: 10%;
+height:850px;
+}
+.update
+{
+	display: grid;
+  	grid-auto-columns:minmax(20px,20px);
+  	grid-auto-rows:minmax(20px,20px);
+}
+img.updatedoll{
+	width:300px;
+}
+img.updatepillow{
+	width:275px;
+}
+img.updatecloth{
+	width:325px;
+}
+img.updatediy{
+	width:300px;
+}
+img.updateother
+{
+	width:275px;
+	
+}
+footer
+{
+	width: 96%;
+}

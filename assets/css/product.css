@@ -16,7 +16,7 @@ border-radius:20px;
 grid-column:13;
 margin-top:65px;
 padding:20px;
-background:#FFFAFA     ;
+background:#FFFAFA;
 width:500px;
 height: 320px;
 border-radius: 20px;
@@ -47,7 +47,7 @@ width: 80%;
 margin-top: 30px;
 margin-left: 10%;
 margin-left: 10%;
-height:570px;
+height:1500px;
 }
 .tablinks
 {
@@ -168,4 +168,80 @@ background-color:white;
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+input[type=text],  textarea {
+width: 100%;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+margin-top: 6px;
+margin-bottom: 16px;
+resize: vertical;
+}
+.send[type=submit] {
+background-color:#F08F90;
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+.send[type=submit]:hover {
+background-color: #FCC9B9;
+}
+.container {
+border-radius: 20px;
+background-color: #FDF5E6;
+padding: 20px;
+}
+legend{font-size:16px;}
+.rating {
+float:left;
+}
+/* :not(:checked) is a filter, so that browsers that don’t support :checked don’t
+follow these rules. Every browser that supports :checked also supports :not(), so
+it doesn’t make the test unnecessarily selective */
+.rating:not(:checked) > input {
+position:absolute;
+top:-9999px;
+clip:rect(0,0,0,0);
+}
+.rating:not(:checked) > label {
+float:right;
+width:1em;
+padding:0 .1em;
+overflow:hidden;
+white-space:nowrap;
+cursor:pointer;
+font-size:200%;
+line-height:1.2;
+color:#ddd;
+text-shadow:1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0,0,0,.5);
+}
+.rating:not(:checked) > label:before {
+content: '★ ';
+}
+.rating > input:checked ~ label {
+color: #f70;
+text-shadow:1px 1px #c60, 2px 2px #940, .1em .1em .2em rgba(0,0,0,.5);
+}
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+color: gold;
+text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+color: #ea0;
+text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+.rating > label:active {
+position:relative;
+top:2px;
+left:2px;
 }

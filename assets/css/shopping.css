@@ -93,3 +93,10 @@ td,th
 	grid-column:8/30;
 	grid-row:7;
 }
+.ad
+{
+	grid-column:12;
+	grid-row:17/20;
+	width: 500px;
+	height: 150px; 
+}

@@ -90,7 +90,7 @@ td,th
 .ad
 {
 	grid-column:12;
-	grid-row:17/19;
+	grid-row:17/20;
 	width: 500px;
-	height: 100px; 
+	height: 150px; 
 }

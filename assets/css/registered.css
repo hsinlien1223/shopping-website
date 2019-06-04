@@ -63,3 +63,18 @@ color: dodgerblue;
 background-color: #f1f1f1;
 text-align: center;
 }
+
+.back
+{
+	background-color:#5D8CAE;
+color: white;
+padding: 16px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 100%;
+opacity: 0.9;
+}
+.back:hover {
+opacity: 1;
+}
