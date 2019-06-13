@@ -64,12 +64,41 @@
 			<a href="group-member.html">關於我們</a>
 		</aside>
 		
-		<div><!--商店名稱-->
-			<img src="assets/images/storename.png" class="storename">
+		<div class="unigrid">
+		<div style="grid-column:7/30;grid-row:1;"><!--動態廣告-->
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+				  <div class="numbertext">1 / 3</div>
+				  <img src="assets/images/actionad2.png"  class="acad">
+				 
+				</div>
+
+				<div class="mySlides fade">
+				  <div class="numbertext">2 / 3</div>
+				  <img src="assets/images/actionad1.png"  class="acad">
+				  
+				</div>
+
+				<div class="mySlides fade">
+				  <div class="numbertext">3 / 3</div>
+				  <img src="assets/images/actionad3.png" class="acad">
+				  
+				</div>
+
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+			<br>
+
+			<div style="text-align:center">
+				<span class="dot" onclick="currentSlide(1)"></span> 
+				<span class="dot" onclick="currentSlide(2)"></span> 
+				<span class="dot" onclick="currentSlide(3)"></span> 
+			</div>
+			<script type="text/javascript" src="assets/js/slide.js"></script>
 		</div>
 
 		<!--同類別商品-->
-		<div class="unigrid">
 			<div class="commodity coma">
 				<img src="assets/images/bearhead.png" class="cateimg">
 				<h1>小熊抱枕</h1>
@@ -116,7 +145,10 @@
 								
 						</a>
 					</p>
-					©2019 CYCU
+					©2019 
+					<div>
+					<iframe src="https://www.google.com/maps/d/embed?mid=1g8kK1YoQ3OPyHzgbSZRLvxKF9IRRamMx" class="footmap"></iframe>
+				</div>
 				<div class="footlogo">
 					<img src="assets/images/storename.png" class="footlogoimg">
 				</div>
