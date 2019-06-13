@@ -5,24 +5,40 @@ body
 }
 .memberuni
 {
-	background-color:pink;
+	background-color:white;
 	border: 3px;
-	border-radius: 5em;
-	text-align: center;
-}
-.memberimg
-{
-	width: 300px;
-	height: 250px;
-	margin: 10px;
+	border-radius: 10px;
 }
 .memberword
 {
-	width: 700px;
+	width: 650px;
 	height: 250px;
 	margin: 10px;
 }
 .mempad
 {
 	padding: 20px;
+	width: 230px;
+}
+.gmember
+{
+	position:relative;
+}
+.gmember img 
+{
+	position:absolute;
+	margin:20px 32px;
+	padding:5px;
+	border-radius:999em;
+  	position:absolute;
+  	transition: opacity 1s ease-in-out;
+ }
+.gmember img:nth-of-type(2):hover
+{
+  opacity:0; 
+}
+.experience
+{
+	font-size: 18px;
+	margin: 25px;
 }
