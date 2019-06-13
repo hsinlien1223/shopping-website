@@ -1,5 +1,6 @@
 *
 {
+	box-sizing: border-box;
 	margin: 0px;
 	padding: 0px;
 }
@@ -116,7 +117,6 @@ footer
 	margin: 50px 0px 0px 0px;
 	background-color: #FFB3A7;
 	padding:2% 2% 0% 2%;
-    margin-top: 5%;
 }
 div.foot
 {
@@ -126,6 +126,7 @@ div.foot
 div.footnews
 {
 	margin-left: 35px;
+	columns: 2;
 }
 div.footlogo
 {
@@ -135,6 +136,11 @@ div.footlogo
 .footlogoimg
 {
 	width:400px;
+}
+.footmap
+{
+	width:250px;
+	height:250px;
 }
 .unigrid
 {
