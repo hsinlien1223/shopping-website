@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<title>fall in love</title>
 		<link rel=stylesheet type="text/css" href="assets/css/united.css">
+		<link rel=stylesheet type="text/css" href="assets/css/unitedhead.css">
 		<link rel=stylesheet type="text/css" href="assets/css/index.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	</head>
@@ -22,7 +23,41 @@
 				<a href="catepillow.html">抱枕</a>
 				<a href="catediy.html">手工材料包</a>
 				<a href="cateother.html">加購專區</a>
+				<a href="hotproduct.html">熱門商品</a>
 				<a href="group-member.html">關於我們</a>
+				
+				<button onclick="location.href='registered.html'" " class="public_btn" style="float: left">註冊</button>
+
+				<button onclick="document.getElementById('id01').style.display='block'" class="public_btn" style="float: left">Login</button>
+					<div id="id01" class="modal">
+						<form class="modal-content animate" action="/action_page.php">
+							<div class="imgcontainer">
+								<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+								<img src="assets/images/login.png" alt="Avatar" class="avatar">
+							</div>
+							<div class="container">
+								<label for="uname" style="font-size: 20px"><b>Username</b></label>
+								<input type="text" placeholder="Enter Username" name="uname" required>
+								<label for="psw" style="font-size: 20px"><b>Password</b></label>
+								<input type="password" placeholder="Enter Password" name="psw" required>
+						
+								<button  type="submit">Login</button>
+								<label>
+									<input type="checkbox" checked="checked" name="remember"> Remember me
+								</label>
+							</div>
+							<div class="container" style="background-color:#a2d7dd;">
+								<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+								<span class="psw">Forgot <a href="#">password?</a></span>
+							</div>
+						</form>
+					</div>
+					<script type="text/javascript" src="assets/js/membtn.js"></script>
+				<br>
+				<button onclick="location.href='registered.jsp'" class="public_btn" style="float: left;margin-top: 7px;">登出</button>
+				<a href="member.html"><!--會員頁面-->
+					<img src="assets/images/people.png" alt="people" class="icon" style="float: left;margin: 7px">
+				</a>	
 			</aside>
 
 			<div class="category">
